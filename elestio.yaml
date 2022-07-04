@@ -1,0 +1,22 @@
+config:
+    runTime: 'NodeJs'
+    version: '16'
+    framework: ''
+    installCommand: "npm install"
+    runCommand: 'npm run start'
+    buildCommand: 'npm run build'
+    buildDir: '/'
+ports:
+  - protocol: "HTTPS"
+    targetProtocol: "HTTP"
+    listeningPort: "443"
+    targetPort: "3000"
+    targetIP: "172.17.0.1"
+    public: true
+    path: "/"
+    isAuth: false
+    login: ""
+    password: ""
+environments:
+    -  key: 'ENV'
+       value: 'production'

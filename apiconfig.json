@@ -1,0 +1,26 @@
+{
+    "global":{
+        "APIKEY": "",
+        "cacheDurationForStatic": 5000,
+        "cacheDurationForAPI": 1000
+    },
+    "REST": {
+        "/api/rest/simple": {
+            "path": "/api/rest/simple.js",
+            "method": "GET",
+            "parametersList": [],
+            "isPrivate": false
+        },
+        "/api/rest/full": {
+            "path": "/api/rest/full.js",
+            "method": "GET",
+            "parametersList": [],
+            "isPrivate": false
+        }
+    },
+    "WEBSOCKET": {
+        "/chat": {
+            "path": "/api/ws/chat.js"
+        }
+    }
+}
